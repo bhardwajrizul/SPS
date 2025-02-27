@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.font-p {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-lg {
+  font-size: 1.25rem;
+}
+
+.text-xl {
+  font-size: 2rem;
+}
+
+.main-container {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.nav {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 16px 4px 0px 4px;
+  background-color: #000;
+  box-shadow: 0 10px 40px 40px black;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-list li {
+  list-style: none;
+  color: #fff;
+}
+
+.nav-list li:last-child {
+  padding-right: 0px;
+}
+
+.nav-list li img {
+  width: 80px;
+}
+
+.image-school {
+  width: 100%;
+}
+
+.header-container {
+  position: relative;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 0px 20px 40px white;
+}
+
+.prospectus-heading {
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0px 20px 40px white;
+  width: 100%;
+  position: relative;
+  margin-bottom: -15px;
+  z-index: 10;
+}
+
+.prospectus-content {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: stretch;
+  font-weight: 300;
+}
+
+.prospectus-content div {
+  flex: 1 1 90%; /* Grow/shrink, start at 48% width */
+  padding: 8px 6px;
+  margin: 4px;
+}
+
+.box-images {
+  width: 72px;
+}
+
+.btn-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.gallery-heading {
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0px 20px 30px white;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+  z-index: 10;
+}
+
+.gallery {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+
+.gallery-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+  z-index: 5;
+}
+
+.gallery-content img {
+  width: 100vw;
+  object-fit: contain;
+  position: relative;
+  z-index: 5;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 4px 16px;
+}
+
+.contact {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact iframe {
+  width: 100% !important;
+}
+
+.contact-heading {
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0px 20px 40px white;
+  width: 100%;
+  margin: 20px 0px 30px 0px;
+  position: relative;
+  z-index: 30;
+}
+
+.email {
+  color: rgb(100, 227, 255);
+}
+
+.contact p {
+  font-size: 1.2rem;
+  font-family: playfair;
+  text-align: center;
+  padding: 4px 16px;
+}
+
+.show {
+  display: flex !important;
+  visibility: visible !important;
+}
+
+.popup {
+  display: none;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.popup p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: playfair;
+  text-align: center;
+  padding: 4px 16px;
+  margin-bottom: 20px;
+}
+
+.popup button {
+  background: #385498;
+  width: 75%;
+  padding: 16px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px 0px;
+  font-size: 1.1rem;
+  color: white;
+  border: 1px solid white;
+}
+
+.gc {
+  position: absolute;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #dcdcdc;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid #dcdcdc;
+  z-index: 100;
+}
+
+.gc-prev {
+  top: 50%;
+  left: 10px;
+}
+
+.gc-next {
+  top: 50%;
+  right: 10px;
+}
+
+#contact {
+  position: relative;
+  box-shadow: 0 0px 10px 20px white;
+  z-index: 40;
+}
