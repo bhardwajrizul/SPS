@@ -1,3 +1,4 @@
+@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
 
 :root {
@@ -8,8 +9,6 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -79,7 +78,7 @@ button {
 }
 
 .nav-list li img {
-  width: 80px;
+  width: 60px;
 }
 
 .image-school {
@@ -99,6 +98,13 @@ button {
   background-color: #fff;
   width: 100%;
   box-shadow: 0 0px 20px 40px white;
+}
+
+.h-shadow {
+  box-shadow: 0 0px 20px 30px white;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 20px;
 }
 
 .prospectus-heading {
@@ -206,16 +212,24 @@ button {
   width: 100%;
   margin: 20px 0px 30px 0px;
   position: relative;
-  z-index: 30;
+  z-index: 5;
+  margin-bottom: -15px;
 }
 
 .email {
-  color: rgb(100, 227, 255);
+  color: #0000ee;
+}
+
+.email:visited {
+  color: #551a8b;
+}
+.email:link:active,
+.email:visited:active {
+  color: #ff0000;
 }
 
 .contact p {
   font-size: 1.2rem;
-  font-family: playfair;
   text-align: center;
   padding: 4px 16px;
 }
@@ -265,26 +279,26 @@ button {
 .gc {
   position: absolute;
   cursor: pointer;
-  font-size: 2rem;
-  color: #dcdcdc;
+  font-size: 1rem;
+  color: white;
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
-  height: 40px;
+  height: 30px;
   border: 1.5px solid #dcdcdc;
   z-index: 100;
 }
 
 .gc-prev {
-  top: 50%;
+  top: 55%;
   left: 10px;
 }
 
 .gc-next {
-  top: 50%;
+  top: 55%;
   right: 10px;
 }
 
@@ -292,4 +306,63 @@ button {
   position: relative;
   box-shadow: 0 0px 10px 20px white;
   z-index: 40;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.rainbow {
+  position: relative;
+  z-index: 0;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rainbow::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #399953;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#399953, #399953),
+    linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33),
+    linear-gradient(#377af5, #377af5);
+  -webkit-animation: rotate 4s linear infinite;
+  animation: rotate 4s linear infinite;
+}
+.rainbow::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 5px;
+  top: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background: white;
+  border-radius: 5px;
+}
+
+footer {
+  position: relative;
+  z-index: 50;
+  border-top: 1px dashed #000;
+  padding-top: 20px;
 }

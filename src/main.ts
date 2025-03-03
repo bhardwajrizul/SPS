@@ -27,18 +27,3 @@ next?.addEventListener('click', () => {
 });
 
 
-// Code for popup modal
-const modal = document.querySelector<HTMLDivElement>('.popup');
-// on page load show modal
-document.addEventListener('DOMContentLoaded', () => {
-  modal?.classList.add('show');
-}
-);
-
-const enbtn = document.querySelector<HTMLButtonElement>('#en-btn');
-
-// on clicking english button
-enbtn?.addEventListener('click', () => {
-  modal?.classList.remove('show');
-}
-);

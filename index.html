@@ -2,23 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Shoghi Public School, most trusted private primary school in Shoghi, Admission Open"
+    />
+    <meta
+      name="keywords"
+      content="Shoghi Public School, Shoghi, Shimla, Himachal Pradesh, primary school, Admission Open"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://shoghipublicschool.com/" />
     <link rel="icon" type="image/svg+xml" href="/images/logoe.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/style.css" />
     <title>Shoghi Public School</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Shoghi Public School (SPS)",
+        "url": "https://www.shoghipublicschool.com",
+        "logo": "https://www.shoghipublicschool.com/images/logoe.png",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+91-XXX-XXX-XXXX",
+            "contactType": "administrative"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Shoghi Public School, Near Ayurvedic Hospital Shoghi",
+          "addressLocality": "Shoghi",
+          "addressRegion": "Himachal Pradesh",
+          "postalCode": "171219",
+          "addressCountry": "IN"
+        }
+      }
+    </script>
   </head>
   <body class="main-container">
     <nav class="nav">
-      <ul class="nav-list font-p text-lg">
+      <ul class="nav-list text-lg">
         <li>
           <a href="/">
             <img src="/images/logo.jpg" alt="logo" />
           </a>
         </li>
-        <li>
+        <li class="text-base font-light">
           <a href="#about">About Us</a>
         </li>
-        <li>
+        <li class="text-base font-light">
+          <a href="#updates">Notice Board</a>
+        </li>
+        <li class="text-base font-light">
           <a href="#contact">Contact Us</a>
         </li>
       </ul>
@@ -26,22 +63,43 @@
     <header>
       <div class="header-container">
         <img class="image-school" src="./images/11.JPG" alt="school image" />
-        <div class="header-text font-p">
-          <h1>Registration Open 2025</h1>
-          <p class="text-lg">from Pre nursery onwards.</p>
+        <div class="header-text">
+          <h1 class="text-xl font-bold font-p">Registration Open 2025</h1>
+          <p class="text-lg font-p text-gray-700">from Pre-nursery onwards.</p>
         </div>
         <img class="image-school" src="./images/13.JPG" alt="school image" />
       </div>
     </header>
+    <section id="updates" class="pb-10">
+      <h1 class="font-p text-center py-2 text-2xl h-shadow font-bold underline">
+        Notice Board
+      </h1>
+      <div class="rainbow bg-gray-100 mx-2 font-light">
+        <ul>
+          <li class="list-disc">
+            Admission Open for session 2025.
+            <img
+              class="w-[40px] h-[40px] inline"
+              src="./public/images/new.gif"
+              alt="new"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
     <section id="about" class="prospectus">
       <div class="prospectus-heading font-p">
-        <h1>About Us</h1>
+        <h1
+          class="font-p text-center py-2 text-2xl h-shadow font-bold underline"
+        >
+          About Us
+        </h1>
       </div>
-      <div class="prospectus-content font-p">
+      <div class="prospectus-content">
         <div class="card">
           <p>
-            The oldest and most trusted private primary school in Shoghi,
-            shaping young minds for decades.
+            The most trusted private primary school in Shoghi, shaping young
+            minds for decades.
           </p>
         </div>
 
@@ -62,18 +120,25 @@
         <div class="card">
           <p>
             A lot of alumni students of Shoghi Public School have gone to
-            Dayanand Public School, DAV Public School, Navodya, Chapslee and
-            other prestigious schools in Shimla and other cities.
+            <span class="list font-p"> Dayanand Public School,&nbsp; </span>
+            <span class="list font-p"> DAV Public School,&nbsp; </span>
+            <span class="list font-p"> St. Edward's School,&nbsp; </span>
+            <span class="list font-p"> Chapslee School </span>
+            and other prestigious schools in Shimla and other cities.
           </p>
         </div>
       </div>
     </section>
     <section class="gallery">
       <div class="gallery-heading font-p">
-        <h1>School Gallery</h1>
+        <h1
+          class="font-p text-center py-2 text-2xl h-shadow font-bold underline"
+        >
+          School Gallery
+        </h1>
       </div>
-      <button class="gc gc-prev" >↩</button>
-      <button class="gc gc-next" >↪</button>
+      <button class="gc gc-prev">Prev</button>
+      <button class="gc gc-next">Next</button>
       <div class="gallery-content">
         <img src="./images/1.jpeg" alt="school image 1" />
         <img src="./images/2.jpeg" alt="school image 2" />
@@ -89,13 +154,21 @@
         <img src="./images/14.JPG" alt="school image 13" />
       </div>
     </section>
-    <section id="contact">
-      <div class="contact font-p">
+    <section class="mb-10" id="contact">
+      <div class="contact">
         <div class="contact-heading">
-          <h1 class="font-p">Contact Us</h1>
+          <h1
+            class="font-p text-center py-2 text-2xl h-shadow font-bold underline"
+          >
+            Contact Us
+          </h1>
         </div>
-        <p class="text-center font-p">
-          Shoghi Public School, Shoghi, Shimla, Himachal Pradesh, India
+        <p class="text-center relative z-10 mb-4">
+          <span class="block text-lg"> Shoghi Public School, </span>
+          <span class="block text-base"> Near Ayurvedic Hospital Shoghi, </span>
+          <span class="block text-base">
+            Shimla, Himachal Pradesh - 171219
+          </span>
         </p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3418.354957041716!2d77.1287616!3d31.0442166!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39057eeb99322fcb%3A0xe92e943b57a736ee!2sShoghi%20Public%20School!5e0!3m2!1sen!2sin!4v1740690724806!5m2!1sen!2sin"
@@ -106,24 +179,30 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <p>Phone: +91 1234567890</p>
-        <p>
-          Email:
-          <a class="font-p email" href="mailto:shoghipublicschool@gmail.com"
-            >shoghipublicschool@gmail.com</a
-          >
+        <p class="text-sm">
+          <span class="font-p font-bold text-base"> Phone: </span>
+          <span class="text-base"> Will be updated soon! </span>
+        </p>
+        <p class="text-sm">
+          <span class="font-p font-bold text-base"> Email: </span>
+          <span class="text-base">
+            <a class="font-p email" href="mailto:shoghipublicschool@gmail.com"
+              >shoghipublicschool@gmail.com</a
+            >
+          </span>
         </p>
       </div>
     </section>
-    <div class="popup font-p">
-      <p>View this page in</p>
-      <button id="en-btn">English</button>
-      <button>
-        <a href="/hi.html">
-          हिन्दी
-        </a>
-      </button>
-    </div>
+    <footer>
+      <div class="footer">
+        <div class="text-center text-gray-700">
+          <span class="block font-p"> &copy; 2025 Shoghi Public School </span>
+          <span class="block font-p"> estd. 2012 </span>
+          <span class="block font-p"> All rights reserved. </span>
+        </div>
+      </div>
+    </footer>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
